@@ -105,7 +105,7 @@ function SignUp() {
                   message: "Password must not exceed 20 characters"
                 },
                 pattern: {
-                  value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
+                  value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z\d])[A-Za-z\d\W_]{8,}$/,
                   message: "Password must include uppercase, lowercase, number, and special character"
                 }
               }}
